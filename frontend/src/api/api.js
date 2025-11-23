@@ -6,3 +6,5 @@ const http = axios.create({
         "Accept" : "application/json"
     }
 })
+
+export default http

@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import http from '../src/api/api'
+import Predict from './pages/Predict'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
+    <Predict></Predict>
   </StrictMode>,
 )
