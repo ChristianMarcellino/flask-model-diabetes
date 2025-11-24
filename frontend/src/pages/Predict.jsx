@@ -46,12 +46,12 @@ export default function Predict() {
       setResult(value.data.data)
 
       setImageUrl("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxQmDvJ34t-R21DHOI050z11CLnkvmLf44A&s")
-
-      // document.getElementById("result").innerText = `Result : ${value}`
+      
     } catch (error) {
       console.log(error)
     } finally {
       setIsLoading(false)
+      
     }
   }
 
