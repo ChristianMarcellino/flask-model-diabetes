@@ -1,9 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Predict from './pages/Predict'
+import { RouterProvider } from 'react-router'
+import router from './router/router'
+import "./assets/css/style.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Predict></Predict>
+    <RouterProvider router={router}></RouterProvider>    
   </StrictMode>,
 )
