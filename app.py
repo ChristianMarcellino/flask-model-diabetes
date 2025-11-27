@@ -5,7 +5,6 @@ import joblib
 
 app = Flask(__name__)
 CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
 loaded_model = joblib.load("models/diabetes_model.pkl")
 loaded_scaler = joblib.load("models/standard_scaler.pkl")
 columns = [

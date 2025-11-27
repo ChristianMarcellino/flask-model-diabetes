@@ -4,7 +4,7 @@ import Footer from "../components/ui/Footer"
 
 export default function Layout() {
   return (
-    <div className="p-4 bg-base-100 min-h-screen flex flex-col">
+    <div className="bg-base-100 flex flex-col">
       <Navbar />
 
       <main className="flex-1 flex justify-center items-center">
