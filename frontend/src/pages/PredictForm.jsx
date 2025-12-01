@@ -44,7 +44,7 @@ export default function PredictForm({
       setIsLoading(true)
       setImageUrl("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQxNgXF3NtnUSRKGOJILZrRxmmBkMELf0Pw&s")
       const value = await http.post("/predict", form)
-
+      console.log(value)
       setResult(value.data.data)
       setImageUrl("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxQmDvJ34t-R21DHOI050z11CLnkvmLf44A&s")
       setTimeout(() => {
