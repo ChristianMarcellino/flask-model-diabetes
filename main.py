@@ -43,7 +43,7 @@ def predict():
             "status" : "Success",
             "message" : "Predict diabetes using a trained model"
         },
-        "data" : "Positive Diabetes" if prediction.tolist()[0] == 1 else "Negative Diabetes"
+        "data" : "Negative Diabetes" if prediction.tolist()[0] == 1 else "Positive Diabetes"
     })
 
 if __name__ == '__main__':
