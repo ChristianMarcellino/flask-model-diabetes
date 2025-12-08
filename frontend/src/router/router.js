@@ -14,6 +14,15 @@ const router = createBrowserRouter([
                         return component.default
                     }
                 }
+            },
+            {
+                path : "/predict-jankenpon",
+                lazy : {
+                    Component : async()=>{
+                        const component = await import("@pages/PredictJankenpon")
+                        return component.default
+                    }
+                }
             }
         ]
     }
