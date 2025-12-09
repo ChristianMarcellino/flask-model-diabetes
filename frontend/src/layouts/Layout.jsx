@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="bg-base-100 flex flex-col">
       <Navbar />
 
-      <main className="flex-1 flex justify-center items-center">
+      <main className="flex justify-center items-center mb-4 mx-auto p-4">
         <Outlet />
       </main> 
 
