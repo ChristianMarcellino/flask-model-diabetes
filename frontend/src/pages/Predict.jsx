@@ -16,7 +16,7 @@ export default function Predict() {
             Prediksi Diabetes
           </h1>
           <p className="text-base-content/70 text-lg">
-            Buat monyet ini berpikir 🐒
+            Buat monyet ini berpikir .🐒
           </p>
           {result && <div role="alert" className="mt-2 alert alert-info">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 shrink-0 stroke-current">

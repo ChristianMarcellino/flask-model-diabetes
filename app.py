@@ -82,8 +82,8 @@ def predict_jankenpon():
             "message" : "Successfully Predicting"
         },
         "data" : {
-            "prediction" : jankenpon_class[prediction_class_index],
-            "probability" : f"{np.max(prediction) * 100:.2f}%"
+            "prediction" : jankenpon_class[prediction_class_index] if np.max(prediction) >= 0.9 else "Not a paper, rock, nor scissors" ,
+            "probability" : f"{np.max(prediction) * 100:.2f}%   "
         }
     })
 

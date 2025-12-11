@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout"
 
 const router = createBrowserRouter([
     {
-        path : "/",
+        path : "",
         Component : Layout,
         children : [
             {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
                 }
             },
             {
-                path : "/predict-jankenpon",
+                path : "predict-jankenpon",
                 lazy : {
                     Component : async()=>{
                         const component = await import("@pages/PredictJankenpon")
